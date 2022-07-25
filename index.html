@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Language of the ASCII -->
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
+
+        <!-- Apple created a meta element to address mobile screen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Name of the website-->
+        <title>
+            Weather Dashboard
+        </title>
+
+    </head>
+    <body>
+        <div class="grid">
+            <header class="title">
+                <h1>Weather Dashboard</h1>
+            </header>
+            <div class="city-information-reserved">
+                <h2>Search for a City:</h2>
+                <div class="search-area">
+                    <input type = "text" id = "country_name_input" class="search-bar city-input">
+                    <button class="searchbtn">Search</button>
+
+                    <h2>History: </h2>
+                    <div class ="button-form">
+                        <button country-btn class = "country-btn" value="Fontana" id="countryid2"></button>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="city-info results-panel">
+                <div class = "weather-card">
+                    <h2>Today's Weather Broadcast!</h2>
+                    <h2 class="citytoday"></h2>
+                    <div class = "temptoday"></div>
+                    <div class = "flex">
+                        <img src="" alt="" class="icontoday" />
+                        <div class = "descriptiontoday"></div>    
+                    </div>  
+                    <div class = "humiditytoday"></div>
+                    <div class = "wind-speedtoday"></div>    
+                </div>
+            </div>
+            <div class="weather-broadcast">
+                <div>
+                    <h2>5-Day Forecast:</h2>
+                </div>
+                
+                <div class="weather-day2">
+                </div>
+
+            </div>
+        </div>
+
+        <script src="./assets/js/script.js" defer></script>
+
+    </body>
+</html>
