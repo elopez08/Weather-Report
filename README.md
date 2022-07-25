@@ -61,15 +61,15 @@ ls
 
 #   [Usage](#usage)
 
-![Beginning](.Images/Beginning-Page.PNG)
+![Beginning](./Images/Beginning-Page.PNG)
 
 In order to use the Weather Broadcast, you need to first use the Search Bar Area.  On this one, you'll want to type in the country that you are searching for (or states in North America such as California).  Once you do that, the weather report would then display on that said country/state on the right.  The top is for today's broadcast while below will display the 5 Day Weather Broadcast.  
 
-![Adding-Button](.Images/Adding-Button.JPG)
+![Adding-Button](./Images/Adding-Button.JPG)
 
 Once that's done, there's a new button that'll add in the system, which is what you searched for.  If you were to search again, another button would then be added in the system.  Once that's done, you can click on any newly formed button to search its "history".  By doing so, you'll get data from that said country/state without forming a new button.  Hence, you'll be able to look at what you have searched, ideal for traveling.
 
-![History](.Images/History-Button-Search.JPG)
+![History](./Images/History-Button-Search.JPG)
 
 #   [The Process](#the-process)
 
