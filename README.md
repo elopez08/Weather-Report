@@ -366,6 +366,26 @@ Made by Edgardo Lopez
 
 #   [Project Status](#project-status)
 
+UPDATE (11/01/2022)
+Redid the flow of the overall project.  Weather Report now fetches the data first, then validates it if it is available (can also write the message depending if the error occurs), it checks and validates if a new button being made is valid, then it displays the information.  While it goes on a loop, it projects a new class depending on the temperature of said city.
+
+In addition, time is now being displayed as well as the date on the one day broadcast.
+
+Added a function where it starts to calculate the time of the city's position and then it projects its day (time isn't shown due to following the current time when it is displayed.  Ex:  5 day broadcast is shown specifically at 8:30AM if user searches at 8:30AM).
+
+AM/PM is now being added to the time indicating in the time (non-military).
+
+The button for the history can now ONLY be written if the existing data doesn't exist.  Should the data exist, the button will NOT be made.
+
+If said city/country doesn't exist in the API, it will NOT create the button.
+
+On the 5-day weather broadcast, using the temperature of the time given on the API, it'll be assigned a color for visual effects.
+
+Search 'Enter' key AND 'button' now functions the same way and it'll pull up the city's information.
+
+Added a loop where it'll now first write the data as innerHTML and then it'll add in the additional class afterwards.  These are in case statements.
+
+CSS now has a property for the temperature (such as cold, room, etc.) to display proper color background for the day for said visual effects.
 
 
 #   [Disclaimer](#disclaimer)

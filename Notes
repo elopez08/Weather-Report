@@ -1,0 +1,12 @@
+//This is incase we need to add something in the array, but first see if it isn't there to begin with
+
+const arr = ['apple', 'pear', 'mango'];
+
+const str = 'apple';
+
+if (!arr.includes(str)) {
+  // ✅ only runs if value not in array
+  arr.push(str);
+}
+
+console.log(arr); // 👉️ ['apple', 'pear', 'mango']

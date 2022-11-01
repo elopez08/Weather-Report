@@ -19,7 +19,7 @@
     <body>
         <div class="grid">
             <header class="title">
-                <h1>Weather Dashboard</h1>
+                <h1>Weather Report</h1>
             </header>
             <div class="city-information-reserved">
                 <h2>Search for a City:</h2>
@@ -27,7 +27,7 @@
                     <input type = "text" id = "country_name_input" class="search-bar city-input">
                     <button class="searchbtn">Search</button>
 
-                    <h2>History: </h2>
+                    <h2 class="searchStatus">History: </h2>
                     <div class ="button-form">
                         <button country-btn class = "country-btn" value="Fontana" id="countryid2"></button>
 
@@ -39,7 +39,9 @@
 
             <div class="city-info results-panel">
                 <div class = "weather-card">
-                    <h2>Today's Weather Broadcast!</h2>
+                    <h1>Weather Broadcast!</h1>
+                    <h2 class="todayDay"></h2>
+                    <h2 class="timeCurrent"></h2>
                     <h2 class="citytoday"></h2>
                     <div class = "temptoday"></div>
                     <div class = "flex">

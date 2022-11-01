@@ -45,7 +45,39 @@ p {
     height: 100%;
     margin: 10px;
     padding: 1em;
+
+    /* Border design */
+    border: 5px solid black;
+    border-radius: 25px;
 }
+
+/* Weather options: */
+.cold {
+    background: blue;
+}
+
+.room {
+    background: rgb(123, 196, 255);
+}
+
+.hot {
+    background: rgb(255, 213, 0);
+}
+
+.prettyhot {
+    background: orange;
+}
+
+.reallyhot {
+    background: orangered;
+}
+
+.dangerhot {
+    background: red;
+}
+
+/* Weather ended */
+
 
 .weather-box div {
     padding: 8px;
@@ -64,6 +96,16 @@ p {
     background-color: rgb(60, 137, 231);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.country-btn:hover {
+    background-color: rgb(60, 100, 231);
+}
+
+.country-btn:active {
+    background-color: rgb(60, 100, 231);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 
@@ -123,4 +165,68 @@ p {
 body {
     margin: 0px;
     background-color: rgb(78, 111, 163);
+}
+
+@media only screen and (max-width: 700px)
+
+{
+    .grid {
+        display: grid;
+        grid-template-columns: 400px 1fr 1fr;
+        place-items: center;
+        margin: auto;
+    
+        /* Whenever there's a "." on it, it is immediately placed on the position in accordance to the html.  Since there is 4 works that have no .grid > identity, that is automatically placed as a grid */
+        grid-template-areas: "title title title"
+                             "city city city"
+                             "city-info city-info city-info"
+                             "weather-broadcast weather-broadcast weather-broadcast";
+    
+    }
+
+    .weather-day2 {
+        flex-direction: column;
+    }
+
+
+    .grid > .title {
+        grid-area: title;
+        background-image: linear-gradient(to right, rgb(0, 29, 252), rgb(24, 33, 103));
+        width: 100%;
+        text-align: center;
+    }
+    
+    .grid > .city-information-reserved {
+        grid-area: city;
+        height: 100%;
+        width: 350px;
+    }
+    
+    .grid > .city-info {
+        grid-area: city-info;
+        width: 100%;
+        text-align: left;
+        border-style: solid;
+        background: rgb(103, 135, 214);
+        opacity: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .weather-card {
+        background: black;
+        color: white;
+        padding: 2em;
+        border-radius: 30px;
+        width: 100%;
+    }
+    
+    .grid > .weather-broadcast {
+        grid-area: weather-broadcast;
+        width: 100%;
+        text-align: left;
+    }
+    
 }
