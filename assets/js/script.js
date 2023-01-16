@@ -1,5 +1,9 @@
 var i = 0;
 var j = 0;
+
+//popup window
+var modal = document.getElementById("hover_bkgr_fricc");
+
 var countrybutton = [];
 //Store the information by country's name
 const countryArrayInfo = [];
@@ -36,6 +40,14 @@ let weatherReport = {
             ===================================`);
             console.log( data.message );
             document.querySelector(".todayDay").innerText = data.message;
+            document.querySelector(".weather-day2").innerHTML = "";
+            document.querySelector(".timeCurrent").innerHTML = "";
+            document.querySelector(".citytoday").innerHTML = "";
+            document.querySelector(".temptoday").innerHTML = "";
+            document.querySelector(".flex").innerHTML = "";
+            document.querySelector(".humiditytoday").innerHTML = "";
+            document.querySelector(".wind-speedtoday").innerHTML = "";
+
         }
         //Otherwise, make the button
         else
@@ -291,3 +303,15 @@ function addGlobalEventEventListener(type, selector, callback) {
         }
     })
 }
+
+(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
