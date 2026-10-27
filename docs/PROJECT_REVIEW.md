@@ -8,13 +8,13 @@
 
 **User-confirmed background:** Weather Report **started as a group project**. The user confirms that the class ended in August 2022 and that the November 2022 overhaul was performed independently after the class ended. This distinction must be preserved in resumes and project summaries.
 
-**What the repository independently establishes:** An initial version was committed July 24–25, 2022 (UTC); a substantial revision was committed November 1, 2022; and further experimental changes were committed January 16, 2023 (UTC). Git diffs identify the changed code, but **do not independently establish authorship of every line**. Describe the initial application as collaborative; attribute the November 2022 revision phase to the user individually based on their explicit confirmation. The January 2023 changes are visible in Git history, but individual authorship of that later phase has not yet been explicitly confirmed.
+**What the repository independently establishes:** An initial version was committed July 24–25, 2022 (UTC); a substantial revision was committed November 1, 2022; and further experimental changes were committed January 16, 2023 (UTC). Git diffs identify the changed code, but **do not independently establish authorship of every line**. Describe the initial application as collaborative; attribute the November 2022 revision phase to the user individually based on their explicit confirmation. The January 2023 changes are visible in Git history; the user believes these were also independent work, but expresses some uncertainty. Record that attribution as probable rather than confirmed.
 
 ## Timeline from Git commits
 
 - **July 25, 2022 UTC — `9b2277c0d`:** Initial HTML/CSS/JS weather dashboard, API calls, current weather, five forecast cards, and history buttons; README and archived code. These are the baseline collaborative-era files, not proof of sole authorship.
 - **November 1, 2022 UTC — `305694dd6`:** Major restructuring from `weatherthree` to `weatherReport`: fetch → validate city → deduplicate/add history button → render weather; city timezone/time display, Fahrenheit conversion, temperature-based colors, revised history logic, search handling, CSS responsive layout, and detailed README update. **User-confirmed independent work**, performed after the class ended in August 2022.
-- **January 16, 2023 UTC — `85a2e642d`:** Added popup markup and styling, experimental popup JavaScript, and clearing stale weather elements on invalid city searches. Popup integration appears incomplete.
+- **January 16, 2023 UTC — `85a2e642d`:** Likely independent continuation, according to the user's tentative recollection. Added popup markup and styling, experimental popup JavaScript, and clearing stale weather elements on invalid city searches. Popup integration appears incomplete.
 
 Links:
 - https://github.com/elopez08/Weather-Report/commit/9b2277c0d
@@ -117,6 +117,6 @@ Suggested order:
 
 Conservative draft:
 
-> **Weather Report — Collaborative Weather Dashboard with Later Individual Revisions (2022–2023).** Contributed to a group weather dashboard using HTML, CSS, JavaScript, and OpenWeather API data. Subsequently revisited the application to restructure API validation and search-history handling, experiment with local-time display, temperature-based forecast styling, responsive layout, and error-state cleanup. Maintained detailed development notes. The November 2022 overhaul is user-confirmed independent work; the January 2023 phase still needs attribution confirmation.
+> **Weather Report — Collaborative Weather Dashboard with Later Individual Revisions (2022–2023).** Contributed to a group weather dashboard using HTML, CSS, JavaScript, and OpenWeather API data. Subsequently revisited the application to restructure API validation and search-history handling, experiment with local-time display, temperature-based forecast styling, responsive layout, and error-state cleanup. Maintained detailed development notes. The November 2022 overhaul is user-confirmed independent work; the January 2023 phase is probably independent according to the user's recollection, but remains tentative.
 
 **Status:** Historical source and Git revision timeline reviewed. Runtime tests and ownership confirmation pending.
